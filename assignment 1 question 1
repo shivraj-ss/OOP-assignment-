@@ -1,25 +1,27 @@
 #include <iostream>
 using namespace std;
 
-class Book {
-private:
+class Book
+{
+public:
     string title;
     string author;
     float price;
 
-public:
-    void getData() {
-        cout << "Enter Book Title: ";
+    void input()
+    {
+        cout << "Enter book title: ";
         cin >> title;
 
-        cout << "Enter Author Name: ";
+        cout << "Enter author name: ";
         cin >> author;
 
-        cout << "Enter Book Price: ";
+        cout << "Enter price: ";
         cin >> price;
     }
 
-    void displayData() {
+    void display()
+    {
         cout << "\nBook Details:" << endl;
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;
@@ -27,11 +29,12 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Book b;
 
-    b.getData();
-    b.displayData();
+    b.input();
+    b.display();
 
     return 0;
 }

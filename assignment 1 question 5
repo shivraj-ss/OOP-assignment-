@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+public:
+    string name;
+    int rollNo;
+    int age;
+
+    void setData(string name, int rollNo, int age)
+    {
+        this->name = name;
+        this->rollNo = rollNo;
+        this->age = age;
+    }
+
+    void display()
+    {
+        cout << "Student Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Age: " << age << endl;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.setData("Vaibhavi", 101, 18);
+
+    s.display();
+
+    return 0;
+}
